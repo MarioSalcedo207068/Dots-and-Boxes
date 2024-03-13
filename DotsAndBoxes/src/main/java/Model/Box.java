@@ -10,7 +10,7 @@ import java.awt.Color;
  *
  * @author salce
  */
-class Box {
+public class Box {
     private Dot pointA;
     private Dot pointB;
     private Dot pointC;

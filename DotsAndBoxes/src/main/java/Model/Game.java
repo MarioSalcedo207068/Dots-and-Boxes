@@ -12,14 +12,31 @@ import java.util.List;
  * @author salce
  */
 public class Game {
+    //Declarando instancia de juego
+    private static Game instance;
     private List<Player> players=new ArrayList<Player>();
     private Board board;
     
-    private void startGame(){};
-    private void endGame(){};
-    private void addPlayer(Player player){};
-    private void leaveGame(){};
+    public void startGame(){};
+    public void endGame(){};
+    public void addPlayer(Player player){};
+    public void leaveGame(){};
 
+    /**
+     * Constructor privado para evitar crear otra instancia fuera de la clase
+     */
+    private Game(){}
+    
+    /**
+     * Implementación Singleton
+     * @return instance de Game
+     */
+    public static Game getInstance(){
+        if (instance == null) {
+            instance = new Game();
+        }
+        return instance;
+    }
     
     public List<Player> getPlayers() {
         return players;

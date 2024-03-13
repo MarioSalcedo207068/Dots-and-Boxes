@@ -4,16 +4,10 @@
  */
 package Model;
 
-import java.awt.Color;
-
 /**
  *
  * @author salce
  */
-public class Line {
-    private Dot start;
-    private Dot end;
-    private Color color;
+public class ProxyBoard {
     
-    public boolean joinDots(){return true;}
 }

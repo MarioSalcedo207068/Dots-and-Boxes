@@ -8,6 +8,7 @@ package Model;
  *
  * @author salce
  */
-class Dot {
-    
+public class Dot {
+    int x;
+    int y;
 }
