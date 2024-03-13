@@ -8,9 +8,29 @@ package Model;
  *
  * @author salce
  */
-public class Board {
+public class Board implements InterfaceBoard{
     private int Height;
     private int Width;
     private int NumberOfDots;
+
+    @Override
+    public Line addLine() {
+        
+        return new Line();
+        
+    }
+
+    public Box addBox() {
+        
+        return new Box();
+        
+    }
+
+    @Override
+    public Dot addDot() {
+        
+        return new Dot();
+        
+    }
     
 }
